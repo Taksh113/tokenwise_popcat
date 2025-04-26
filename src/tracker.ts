@@ -160,12 +160,12 @@ async function processTransaction(
       const postAmount = parseFloat(postBalance.uiTokenAmount.uiAmountString || '0');
 
       if (postAmount > preAmount) {
-        type = 'buy';
+        type = 'sell';
         amount = postAmount - preAmount;
         tokenMintAddress = postBalance.mint;
         detected = true;
       } else if (postAmount < preAmount) {
-        type = 'sell';
+        type = 'buy';
         amount = preAmount - postAmount;
         tokenMintAddress = postBalance.mint;
         detected = true;
