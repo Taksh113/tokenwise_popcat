@@ -25,3 +25,8 @@ sudo apt install sqlite3
 npm run start
 ```
 
+### 3. To use CLI tool
+```bash
+python3 cli.py
+```
+And then enter the SQL query which you want.
