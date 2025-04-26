@@ -24,7 +24,7 @@ export async function initDB() {
     CREATE TABLE IF NOT EXISTS transactions (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       wallet_address TEXT NOT NULL,
-      signature TEXT UNIQUE,
+      signature TEXT,
       type TEXT NOT NULL,  -- 'buy' or 'sell'
       amount REAL NOT NULL,
       protocol TEXT NOT NULL,
@@ -37,7 +37,7 @@ export async function initDB() {
     CREATE TABLE IF NOT EXISTS all_transactions (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       wallet_address TEXT NOT NULL,
-      signature TEXT UNIQUE,
+      signature TEXT,
       type TEXT NOT NULL,
       amount REAL NOT NULL,
       protocol TEXT,
