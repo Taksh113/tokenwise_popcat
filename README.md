@@ -30,3 +30,5 @@ npm run start
 python3 cli.py
 ```
 And then enter the SQL query which you want.
+
+### Also put RPC_URL in .env file, you can use mainnet private RPC url from any platform such as Helius.
